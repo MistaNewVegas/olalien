@@ -1,0 +1,55 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Megaparent + Background */
+.screen-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:rgb(42, 42, 42);
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.image {
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.image img {
+    max-width: 29vw;
+    padding: 1vw;
+    background-color: white;
+    margin-bottom: 2vw;
+}
+
+.image h1 {
+    font-weight: bold;
+    font-size:2.23vw;
+}
+
+.image p {
+    text-align: justify;
+}
+
+.image a {
+    text-align: center;
+    background-color: white;
+    padding: 1vw;
+    margin-top: 1vw;
+    width: 80%;
+    text-decoration: none;
+    color: black;
+    font-size: 2vw;
+    border: 3px solid black;
+}
