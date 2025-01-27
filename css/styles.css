@@ -11,15 +11,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background-color:rgb(42, 42, 42);
+    background-color: rgb(42, 42, 42);
     color: white;
     font-family: Arial, sans-serif;
-    padding: 20px;
+    padding: 5%; /* Use relative padding */
 }
 
+/* Image container and layout */
 .image {
-    width: 30vw;
+    width: 90%; /* Default for smaller screens */
+    max-width: 400px; /* Cap the maximum width */
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -27,29 +28,43 @@
 }
 
 .image img {
-    max-width: 29vw;
-    padding: 1vw;
+    max-width: 100%; /* Ensure the image resizes with its container */
+    height: auto; /* Maintain aspect ratio */
+    padding: 2%; /* Relative padding for scaling */
     background-color: white;
-    margin-bottom: 2vw;
+    margin-bottom: 3%;
+    border: 2px solid black; /* Optional: Add a border for styling */
 }
 
 .image h1 {
     font-weight: bold;
-    font-size:2.23vw;
+    font-size: 5vw; /* Scale based on viewport width */
+    text-align: center;
 }
 
 .image p {
     text-align: justify;
+    font-size: 4vw; /* Scales text for mobile */
+    line-height: 1.5; /* Improved readability */
 }
 
 .image a {
     text-align: center;
     background-color: white;
-    padding: 1vw;
-    margin-top: 1vw;
+    padding: 3%; /* Use percentages for scalable padding */
+    margin-top: 5%;
     width: 80%;
+    max-width: 300px; /* Cap the maximum width */
     text-decoration: none;
     color: black;
-    font-size: 2vw;
+    font-size: 4vw; /* Scale text size for mobile */
     border: 3px solid black;
+    border-radius: 5px; /* Slight rounding for modern feel */
+}
+
+/* Media Queries for Larger Screens */
+@media (min-width: 1024px) {
+    .image {
+        width: 40%; /* Further restrict size on larger screens */
+    }
 }
